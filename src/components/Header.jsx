@@ -158,7 +158,7 @@ const toggleMenu = () => {
 
           </div>
           <button 
-          onClick={() => {toggleMenu()}}
+          onClick={() => {toggleMenu(); openContactForm();}}
           className='mt-4 block w-full px-4 py-2 rounded-lg bg-gradient-to-r from-violet-600 to-violet-400 font-bold'>
             Contact Me
           </button>
@@ -176,7 +176,7 @@ const toggleMenu = () => {
         animate={{ opacity: 1 }}
         exit={{opacity:0}}
         transition={{duration: 0.5}}
-        className='fixed inset-0 bg-black/50 background-blur-sm z-50 flex items-center justify-center p-4 '
+        className='fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 '
        >
 
           <motion.div 
